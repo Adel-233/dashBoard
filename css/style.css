@@ -1,0 +1,358 @@
+:root {
+  --primary-color: #ff4d6d;
+  --second-color: #c9184a;
+  --third-color: #ffccd5;
+  --fourthly-color: #590d22;
+  --fith-color: #fff0f3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Utilities*/
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+/*width and height*/
+.w-100 {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.w-7 {
+  width: 7%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.vh-100 {
+  height: 100vh;
+}
+
+/*width and height*/
+
+/*display*/
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+.justify-content-end {
+  justify-content: end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+/*display*/
+
+/*Utilities*/
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  box-sizing: border-box;
+  /* gap: 10px; */
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 50px 1fr 30px;
+}
+
+/*strat button*/
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+/*end button*/
+
+.border-1px-solid {
+  border: 1px solid;
+}
+
+footer {
+  background-color: var(--fourthly-color);
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/*start header*/
+
+header {
+  background-color: var(--second-color);
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.logo {
+  width: 13%;
+  height: 50px;
+  background-color: var(--fourthly-color);
+  border-right: 3px solid var(--fith-color);
+}
+
+.logo h1 {
+  font-size: 15px;
+}
+
+.logo h1 a {
+  text-decoration: none;
+  color: var(--fith-color);
+}
+
+.sgi {
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.sgin-in {
+  height: 50px;
+  border-right: 3px solid var(--fith-color);
+  width: 5%;
+}
+
+.sgin-in a,
+.login a {
+  text-decoration: none;
+  color: var(--fith-color);
+}
+
+.sgin-in a:hover,
+.login a:hover {
+  color: var(--third-color);
+}
+
+.login {
+  width: 5%;
+}
+
+/*end header*/
+
+/*nav start*/
+aside {
+  background-color: var(--primary-color);
+}
+
+nav {
+  width: 100%;
+  display: inline-block;
+}
+
+nav h1 {
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 10px 50px;
+  color: var(--fith-color);
+} 
+
+nav h1 i{
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 13px;
+  color: var(--fourthly-color);
+  cursor: pointer;
+}
+
+nav h1:hover {
+  color: var(--fourthly-color);
+  background-color: var(--third-color);
+}
+
+nav h1 i:hover {
+  color: var(--second-color);
+}
+
+.line{
+  border-top: 1px solid white;
+}
+
+/* nav i {
+  text-align: center;
+  padding: 5px 10px;
+  color: var(--third-color);
+  background-color: var(--primary-color);
+  cursor: pointer;
+} */
+
+/* nav i:hover {
+  color: var(--fourthly-color);
+  background-color: var(--third-color);
+} */
+/*end nav*/
+
+/*start article*/
+
+article {
+  background-color: var(--third-color);
+  padding: 15px;
+}
+
+.btnAdd {
+  color: var(--fith-color);
+  background-color: var(--primary-color);
+}
+
+.btnAdd:hover {
+  filter: brightness(130%);
+}
+
+table {
+  width: 100%;
+  margin-top: 35px;
+}
+
+thead {
+  background-color: var(--second-color);
+  color: var(--fith-color);
+}
+
+table,
+tr,
+td,
+th {
+  /* border: 1px solid var(--fourthly-color); */
+  border-collapse: collapse;
+}
+
+th{
+  padding: 10px 5px;
+  text-align: left;
+}
+
+tr:hover{
+  filter: brightness(130%);
+}
+
+td {
+  padding: 10px;
+}
+
+table a {
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: var(--fourthly-color);
+}
+
+table a:hover {
+  color: var(--fith-color);
+}
+
+tbody tr:nth-child(odd){
+  background-color: var(--fith-color);
+}
+
+tbody tr:nth-child(even){
+  background-color: var(--third-color);
+}
+
+/*end article*/
+
+/*start footer*/
+
+footer span {
+  color: var(--fith-color);
+}
+
+/*start media*/
+
+@media screen and (max-width: 281px){
+  main {
+    width: auto;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows:  1fr ;
+  }
+
+  header{
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  header{
+    height: 10px;
+  }
+
+  .logo {
+    width: 100%;
+    height: 50px;
+  } 
+  
+  .sgi {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+  }
+
+  .sgin-in{
+    width: 60px;
+  }
+
+  .login {
+    width: 60px;
+    height: 50px;
+  }
+
+  nav{
+    display: flex;
+    flex-direction: row;
+  }
+}
